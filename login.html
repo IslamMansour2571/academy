@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="letter-a.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="signup.css" />
+    <title>Login Page</title>
+  </head>
+  <body>
+    <img src="books.jpg" alt="main img" class="main-img" />
+    <div class="login_form">
+      <button class="close-btn" onclick="closePopup()">×</button>
+      <h2 class="text">Login</h2>
+      <form action="https://httpbin.org/post" method="POST">
+        <input
+          class="email"
+          type="email"
+          name="login"
+          id="login"
+          placeholder="Email"
+          required
+        />
+        <input
+          class="password"
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Password"
+          required
+        />
+        <a class="login" href="signup.html">Sign up</a>
+        <button class="submit" type="submit">Login</button>
+      </form>
+    </div>
+  </body>
+</html>

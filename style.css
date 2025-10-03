@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: black;
+}
+
+header {
+  position: fixed;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  z-index: 9999;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  margin: 0;
+  padding: 0;
+}
+
+li a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.academy {
+  font-size: 44px;
+  color: white;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.login {
+  position: relative;
+  font-size: 1.1rem;
+  font-weight: bold;
+  width: 130px;
+  height: 50px;
+  border-radius: 80px;
+  background: white;
+  color: black;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.login:hover {
+  background: hsla(0, 0%, 100%, 0.957);
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.511);
+  transition: 0.4s;
+}
+
+.login:active {
+  transform: scale(0.9);
+  transition: 0.2s;
+}
+
+a {
+  text-decoration: none;
+}
+
+li a:hover {
+  color: #fff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+    0 0 20px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 255, 255, 0.4);
+}
+
+li a:active {
+  color: rgba(255, 255, 255, 0.638);
+}
+hr {
+    width: 95%;
+    height: 2px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    margin: 20px auto;
+    position: static;
+  }
+
+  .content1,
+  .content2,
+  .content3,
+  .content4 {
+    width: 270px;
+    height: 270px;
+    margin: 0 40px;
+    border: 1px solid white;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+
+    /* ترتيب عمودي: الصورة فوق والكلام تحت */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background: transparent;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .content1:hover,
+  .content2:hover,
+  .content3:hover,
+  .content4:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.5);
+    z-index: 10;
+  }
+  .content1:active,
+  .content2:active,
+  .content3:active,
+  .content4:active {
+    transform: scale(0.95);
+  }
+
+  .img1,.img2,.img3,.img4 {
+    width: 100%;
+    height: 120px; /* خلتها تاخد نص الكارت */
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+  }
+
+  .lesson1,
+  .lesson2,
+  .lesson3,
+  .lesson4 {
+    flex: 1; /* يخلي النص ياخد المساحة الباقية */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+  }
+
+.main-img {
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center; /* يخليهم في النص */
+    align-items: flex-start; /* يظبط محاذاة من فوق */
+    gap: 30px; /* مسافة بين الكروت */
+    margin-top: 40px; /* مسافة من فوق */
+  }
+
+.blur{
+    position: relative;
+    top: 3px;
+    width: 100%;
+    height: 6vh;
+    border-top: 1px solid white;
+    backdrop-filter: blur(8px);
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.2),
+        rgba(255,255,255,0)
+    );
+    border-radius: 30px;
+    z-index: 9999;
+}

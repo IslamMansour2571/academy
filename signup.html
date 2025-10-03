@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="letter-a.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="signup.css" />
+    <title>Sign up Page</title>
+  </head>
+  <body>
+    <img src="books.jpg" alt="main img" class="main-img" />
+    <div class="login_form">
+      <button class="close-btn" onclick="closePopup()">×</button>
+      <h2 class="text">Sign up</h2>
+      <form action="https://httpbin.org/post" method="POST">
+        <div class="name-fields">
+          <input
+            class="First_name"
+            type="text"
+            name="firstname"
+            id="firstname"
+            placeholder="First Name"
+            required
+          />
+          <input
+            type="text"
+            class="last_name"
+            name="lastname"
+            id="lastname"
+            placeholder="Last Name"
+            required
+          />
+        </div>
+        <input
+          class="email"
+          type="email"
+          name="login"
+          id="login"
+          placeholder="Email"
+          required
+        />
+        <input
+          class="password"
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Password"
+          required
+        />
+        <a class="login" href="login.html">Login</a>
+        <button class="submit" type="submit">Sign up</button>
+      </form>
+    </div>
+  </body>
+</html>
